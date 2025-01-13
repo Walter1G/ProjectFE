@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    /* Primary Colors */
+    --color-navy-blue: #001F3F;
+    --color-red: #FF4136;
+    --color-black: #111111;
+  
+    /* Supporting Colors */
+    --color-white: #FFFFFF;
+    --color-light-gray: #F2F2F2;
+    --color-muted-navy: #003366;
+    --color-soft-red: #FF6F61;
+  
+    /* Gradients */
+    --gradient-button-hover: linear-gradient(90deg, #FF4136, #FF6F61);
+    --gradient-background: linear-gradient(180deg, #001F3F, #003366);
+  
+    /* Shadows */
+    --box-shadow-light: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    --box-shadow-dark: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  
+    /* Transparency (optional) */
+    --color-navy-blue-translucent: rgba(0, 31, 63, 0.8);
+    --color-red-translucent: rgba(255, 65, 54, 0.8);
+  }
+
+  body {
+    background-color: var(--color-muted-navy);
+    color: var(--color-black);
+  }
+  
+  header {
+    background-color: var(--color-navy-blue);
+    color: var(--color-white);
+  }
+  
+  button {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow-light);
+    cursor: pointer;
+    margin: 1em;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  button:hover {
+    background: var(--gradient-button-hover);
+    box-shadow: var(--box-shadow-dark);
+  }
+  
+  footer {
+    background: var(--gradient-background);
+    color: var(--color-white);
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .container{
+    height: 100vh;
+    width: 100vw;
+    justify-items: center;
+    
+    align-content: center;
+    /* background-color: blue; */
+  }
+
+
+
+
+
+.login_form{
+    
+  background-color: var(--color-light-gray) ;
+  box-shadow: var(--box-shadow-dark);
+    padding: 4em;
+    
+    width: 20vw;
+ 
+   width: 40vw;
+   min-width: 400px;  
+   border: none;
+   border-radius: 0.8em;
+
+
+   
+   
+}
+
+
+.password_input, .email_input{
+    
+    position:relative;
+    max-width:300px;
+   
+    line-height: 2em;
+    margin: .5em;
+    
+
+}
+
+
+
+
+input{
+    line-height: 2em;
+    padding: 0.4em;
+    width: 100%;
+    
+    
+    
+}
+.password_input input{
+    width: 100%;
+}
+
+.password_input svg{
+    position:absolute;
+    right: 0;
+    top: 0.35em;
+ 
+    fill: #686666;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
