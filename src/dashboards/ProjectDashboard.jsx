@@ -66,26 +66,20 @@ const Project = ()=>{
                 <td>Action</td>                
             </thead>
             <tbody>
-                <ul>
-                    
-                    {
-                        projects.map(project=>{
-                            <li key={project.id}>
-                                <tr>
-                                    <td>project.id</td>
-                                    <td>project.title</td>
-                                    <td>project.amount_spent</td>
-                                    <td>
-                                    </td>
-                                        <button>📝</button>
-                                        <button>❌</button>
-                                </tr>
-                            </li>
-                        })
-                    }
-                </ul>
-
-            </tbody>
+    {
+        projects.map((project) => (
+            <tr key={project.id}>
+                <td>{project.id}</td>
+                <td>{project.title}</td>
+                <td>{project.amount_spent}</td>
+                <td>
+                    <button>📝</button>
+                    <button>❌</button>
+                </td>
+            </tr>
+        ))
+    }
+</tbody>
         </table>
         :
         <p>No Projects currently</p>
